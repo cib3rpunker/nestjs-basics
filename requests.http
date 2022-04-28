@@ -1,0 +1,38 @@
+### List all messages
+GET http://localhost:3000/messages
+
+
+### Create a new message
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+  "content": "hi there"
+}
+
+### If the content-type is a number it should fail
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+  "content": 123
+}
+
+### If the content-type is null it should fail
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+  "content": null
+}
+
+### If the content-type is not present it should fail
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+
+}
+
+### Get a particular message
+GET http://localhost:3000/messages/123123123
