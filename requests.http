@@ -36,3 +36,6 @@ content-type: application/json
 
 ### Get a particular message
 GET http://localhost:3000/messages/775864
+
+### Get a particular message
+GET http://localhost:3000/messages/1
